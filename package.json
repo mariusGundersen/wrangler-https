@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "server": "node server.js",
-    "wrangler:dev": "wrangler pages dev ./public"
+    "wrangler:dev": "wrangler pages dev ./public",
+    "wrangler:dev:node-extra-ca-certs": "cross-env set NODE_EXTRA_CA_CERTS=localhost.crt && wrangler pages dev ./public"
   },
   "keywords": [],
   "author": "",
